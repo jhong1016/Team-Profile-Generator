@@ -1,4 +1,4 @@
-// Code to define and export the Employee class.
+// Code to define and export the Employee class. All team members are employees and dependant on Employee.
 class Employee {
     constructor(name, id, email) {
         this.name = name;
