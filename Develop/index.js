@@ -68,6 +68,14 @@ const managerQuestions = [
     },
 ];
 
+const confirmEmployee = [
+    {
+        type: 'confirm',
+        message: "Would you like to add another team member?",
+        name: 'confirmEmp',
+    }
+];
+
 module.exports = {
     manager: managerQuestions,
     create: confirmEmployee,
@@ -75,6 +83,8 @@ module.exports = {
     engineer: engineerQuestions,
     intern: internQuestions
 };
+
+// ------------------------------------------------------------------
 
 // Function to create a Manager object.
 async function createManager(){
