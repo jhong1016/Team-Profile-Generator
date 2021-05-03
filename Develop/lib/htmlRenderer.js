@@ -59,4 +59,9 @@ const renderMain = html => {
     return replacePlaceholders(template, "team", html);
 };
 
+const replacePlaceholders = (template, placeholder, value) => {
+    const pattern = new RegExp("{{ " + placeholder + " }}", "gm");
+    return template.replace(pattern, value);
+};
+
 module.exports = render;
