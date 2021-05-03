@@ -15,3 +15,10 @@ const outputPath = path.join(outputDir, "main.html");
 // Array to contain all employee objects to render HTML
 const team = [];
 
+// ------------------------------------------------------------------
+
+// Function to create a manager object
+createManager();
+
+function createManager(){
+}
