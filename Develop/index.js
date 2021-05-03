@@ -34,3 +34,5 @@ function createManager(){
 
     console.log("A manager has been added to the team: ", newManager);
 };
+
+init();
