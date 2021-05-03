@@ -13,7 +13,7 @@ const outputDir = path.resolve(__dirname, "output");
 const outputPath = path.join(outputDir, "main.html");
 
 // Array to contain all employee objects to render HTML
-const team = [];
+const employees = [];
 
 // ------------------------------------------------------------------
 
@@ -21,4 +21,16 @@ const team = [];
 createManager();
 
 function createManager(){
-}
+    let managerResponses = await inquirer.prompt(questions.manager);
+
+    // Create new object from class and add to employee array
+    let newManager = new Manager
+        (managerResponses.mgrName,
+        managerResponses.mgrId,
+        managerResponses.mgrEmail,
+        managerResponses.mgrOffice);
+
+    employees.push(newManager);
+
+    console.log("A manager has been added to the team: ", newManager);
+};
