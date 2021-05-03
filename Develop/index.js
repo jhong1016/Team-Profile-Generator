@@ -15,6 +15,67 @@ const outputPath = path.join(outputDir, "main.html");
 // Array to contain all Employee objects to render HTML.
 const employees = [];
 
+// ------------------------------------------------------------------
+
+const managerQuestions = [
+    {
+        type: 'input',
+        message: "This application will generate an HTML page for a software engineering team. A software engineering team usually consists of a Manager and any number of engineers and interns. First, what is your Manager's name?",
+        name: 'mgrName',
+        default: 'Mana Ger',
+        validate: function (answer) {
+            if (answer.length < 1) {
+                return console.log("A valid name is required.");
+            }
+            return true;
+        }
+    },
+    {
+        type: 'input',
+        message: "What is your manager's employee ID?",
+        name: 'mgrId',
+        default: '100',
+        validate: function (answer) {
+            if (answer <= 0) {
+                return console.log("A valid employee ID is required.");
+            }
+            return true;
+        }
+    },
+    {
+        type: 'input',
+        message: "What is your manager's email address?",
+        name: 'mgrEmail',
+        default: 'testmgr@test.com',
+        validate: function (answer) {
+            if (answer.length < 1) {
+                return console.log("A valid email address is required.");
+            }
+            return true;
+        }
+    },
+    {
+        type: 'input',
+        message: "What is your manager's office number?",
+        name: 'mgrOffice',
+        default: '400',
+        validate: function (answer) {
+            if (answer.length < 1) {
+                return console.log("A valid office number is required.");
+            }
+            return true;
+        }
+    },
+];
+
+module.exports = {
+    manager: managerQuestions,
+    create: confirmEmployee,
+    employee: employeeType,
+    engineer: engineerQuestions,
+    intern: internQuestions
+};
+
 // Function to create a Manager object.
 async function createManager(){
     let managerResponses = await inquirer.prompt(questions.manager);
