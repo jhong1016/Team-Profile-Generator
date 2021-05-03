@@ -131,6 +131,54 @@ const engineerQuestions = [
     }
 ];
 
+const internQuestions = [
+    {
+        type: 'input',
+        message: "What is your Intern's name?",
+        name: 'internName',
+        validate: function (answer) {
+            if (answer.length < 1) {
+                return console.log("A valid name is required.");
+            }
+            return true;
+        }
+    },
+    {
+        type: 'input',
+        message: "What is your Intern's employee ID?",
+        name: 'internId',
+        default: '616',
+        validate: function (answer) {
+            if (answer <= 0) {
+                return console.log("A valid employee ID is required.");
+            }
+            return true;
+        }
+    },
+    {
+        type: 'input',
+        message: "What is your Intern's email address?",
+        name: 'internEmail',
+        validate: function (answer) {
+            if (answer.length < 1) {
+                return console.log("A valid email address is required.");
+            }
+            return true;
+        }
+    },
+    {
+        type: 'input',
+        message: "What is the name of your Intern's university?",
+        name: 'internSchool',
+        validate: function (answer) {
+            if (answer.length < 1) {
+                return console.log("A valid school is required.");
+            }
+            return true;
+        }
+    }
+];
+
 module.exports = {
     manager: managerQuestions,
     create: confirmEmployee,
