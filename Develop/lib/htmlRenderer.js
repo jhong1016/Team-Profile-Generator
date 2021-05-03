@@ -1,5 +1,5 @@
-const path = require("path");
 const fs = require("fs");
+const path = require("path");
 
 const templatesDir = path.resolve(__dirname, "../src");
 
@@ -24,6 +24,14 @@ const render = employees => {
 
 };
 
-
+const renderManager = manager => {
+    let template = fs.readFileSync(path.resolve(templatesDir, "manager.html"), "utf8");
+    template = replacePlaceholders(template, "name", manager.getName());
+    template = replacePlaceholders(template, "role", manager.getRole());
+    template = replacePlaceholders(template, "email", manager.getEmail());
+    template = replacePlaceholders(template, "id", manager.getId());
+    template = replacePlaceholders(template, "officeNumber", manager.getOfficeNumber());
+    return template;
+};
 
 module.exports = render;
