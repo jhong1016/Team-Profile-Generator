@@ -16,9 +16,7 @@ const outputPath = path.join(outputDir, "main.html");
 const employees = [];
 
 // Function to create a Manager object.
-createManager();
-
-function createManager(){
+async function createManager(){
     let managerResponses = await inquirer.prompt(questions.manager);
 
     // Create new object from class and add to Employee array.
