@@ -12,5 +12,6 @@ const render = require("./lib/htmlRenderer");
 const outputDir = path.resolve(__dirname, "output");
 const outputPath = path.join(outputDir, "main.html");
 
+// Array to contain all employee objects to render HTML
 const team = [];
 
