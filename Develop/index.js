@@ -13,7 +13,7 @@ const outputDir = path.resolve(__dirname, "output");
 const outputPath = path.join(outputDir, "main.html");
 
 // Array to contain all employee objects to render HTML
-const employee = [];
+const employees = [];
 
 // ------------------------------------------------------------------
 
@@ -30,7 +30,7 @@ function createManager(){
         managerResponses.mgrEmail,
         managerResponses.mgrOffice);
 
-    employee.push(newManager);
+    employees.push(newManager);
 
     console.log("A manager has been added to the team: ", newManager);
 };
