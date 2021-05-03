@@ -76,6 +76,15 @@ const confirmEmployee = [
     }
 ];
 
+const employeeType = [
+    {
+        type: 'list',
+        message: "Would you like to add an Engineer or Intern?",
+        choices: ['Engineer', 'Intern'],
+        name: 'empRole',
+    }
+];
+
 module.exports = {
     manager: managerQuestions,
     create: confirmEmployee,
