@@ -7,3 +7,10 @@ const path = require("path");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
+const render = require("./lib/htmlRenderer");
+
+const outputDir = path.resolve(__dirname, "output");
+const outputPath = path.join(outputDir, "main.html");
+
+const team = [];
+
