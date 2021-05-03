@@ -12,18 +12,16 @@ const render = require("./lib/htmlRenderer");
 const outputDir = path.resolve(__dirname, "output");
 const outputPath = path.join(outputDir, "main.html");
 
-// Array to contain all employee objects to render HTML
+// Array to contain all Employee objects to render HTML.
 const employees = [];
 
-// ------------------------------------------------------------------
-
-// Function to create a manager object
+// Function to create a Manager object.
 createManager();
 
 function createManager(){
     let managerResponses = await inquirer.prompt(questions.manager);
 
-    // Create new object from class and add to employee array
+    // Create new object from class and add to Employee array.
     let newManager = new Manager
         (managerResponses.mgrName,
         managerResponses.mgrId,
@@ -32,7 +30,27 @@ function createManager(){
 
     employees.push(newManager);
 
-    console.log("A manager has been added to the team: ", newManager);
+    console.log("Thank you. A manager has been added to the team: ", newManager);
 };
+
+// Function to ask to create a new team member.
+async function confirmEmployee() {
+
+    // Would you like to add another team member?
+    let confirmEmployee = await inquirer.prompt(questions.create);
+
+    switch (confirmEmployee.confirmEmp) {
+        case false:
+            console.log("Thank you. Here are your team members: ", employees);
+            console.log('Generating your HTML page...');
+            return;
+
+        // If yes to add another team member, ask whether to create an Engineer or Intern.
+        case true:
+            await createEmployee();
+    };
+};
+
+
 
 init();
