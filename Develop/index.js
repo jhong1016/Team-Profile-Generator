@@ -22,7 +22,6 @@ const managerQuestions = [
         type: 'input',
         message: "This application will generate an HTML page for a software engineering team. A software engineering team usually consists of a Manager and any number of engineers and interns. First, what is your Manager's name?",
         name: 'mgrName',
-        default: 'Mana Ger',
         validate: function (answer) {
             if (answer.length < 1) {
                 return console.log("A valid name is required.");
@@ -34,7 +33,7 @@ const managerQuestions = [
         type: 'input',
         message: "What is your manager's employee ID?",
         name: 'mgrId',
-        default: '100',
+        default: '101',
         validate: function (answer) {
             if (answer <= 0) {
                 return console.log("A valid employee ID is required.");
@@ -46,7 +45,6 @@ const managerQuestions = [
         type: 'input',
         message: "What is your manager's email address?",
         name: 'mgrEmail',
-        default: 'testmgr@test.com',
         validate: function (answer) {
             if (answer.length < 1) {
                 return console.log("A valid email address is required.");
@@ -58,7 +56,7 @@ const managerQuestions = [
         type: 'input',
         message: "What is your manager's office number?",
         name: 'mgrOffice',
-        default: '400',
+        default: '414',
         validate: function (answer) {
             if (answer.length < 1) {
                 return console.log("A valid office number is required.");
@@ -82,6 +80,54 @@ const employeeType = [
         message: "Would you like to add an Engineer or Intern?",
         choices: ['Engineer', 'Intern'],
         name: 'empRole',
+    }
+];
+
+const engineerQuestions = [
+    {
+        type: 'input',
+        message: "What is your Engineer's name?",
+        name: 'engName',
+        validate: function (answer) {
+            if (answer.length < 1) {
+                return console.log("A valid name is required.");
+            }
+            return true;
+        }
+    },
+    {
+        type: 'input',
+        message: "What is your Engineer's employee ID?",
+        name: 'engId',
+        default: '212',
+        validate: function (answer) {
+            if (answer <= 0) {
+                return console.log("A valid employee ID is required.");
+            }
+            return true;
+        }
+    },
+    {
+        type: 'input',
+        message: "What is your Engineer's email address?",
+        name: 'engEmail',
+        validate: function (answer) {
+            if (answer.length < 1) {
+                return console.log("A valid email address is required.");
+            }
+            return true;
+        }
+    },
+    {
+        type: 'input',
+        message: "What is your Engineer's GitHub?",
+        name: 'engGithub',
+        validate: function (answer) {
+            if (answer.length < 1) {
+                return console.log("A valid GitHub is required.");
+            }
+            return true;
+        }
     }
 ];
 
