@@ -100,6 +100,20 @@ async function init() {
         console.log(error);
     };
 
+    try {
+        /* After the user has inputed all employees desired, call the render function and pass an array containing all employee objects.
+        The render function will generate and return a block of HTML including templated divs for each employee. */
+        let renderedHTML = render(employees);
+
+        /* Take HTML returned from render() function and write to file named index.html in the dist folder */
+        fs.writeFileSync('./dist/index.html', renderedHTML);
+
+        console.log('Done! Your HTML page has been generated in the dist folder.')
+
+    } catch (error) {
+        console.log(error);
+    }
+
 };
 
 init();
