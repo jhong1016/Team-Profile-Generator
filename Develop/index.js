@@ -11,9 +11,6 @@ const Intern = require("./lib/Intern");
 const render = require("./lib/htmlRenderer");
 const questions = require('./questions');
 
-const outputDir = path.resolve(__dirname, "output");
-const outputPath = path.join(outputDir, "main.html");
-
 // Array to contain all Employee objects to render HTML.
 const employees = [];
 
