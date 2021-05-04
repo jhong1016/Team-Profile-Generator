@@ -3,7 +3,7 @@ const Engineer = require("../lib/Engineer");
 test("Can instantiate Engineer instance", () => {
     const e = new Engineer();
     expect(typeof(e)).toBe("object");
-  });
+});
 
 test("Can set GitHub account via constructor", () => {
   const testValue = "GitHubUser";
