@@ -2,7 +2,7 @@
 
 ---
 
-<a href="https://img.shields.io/badge/JavaScipt-69.6%25-yellow"><img alt="JavaScript use" src="https://img.shields.io/badge/JavaScipt-69.6%25-yellow"></a> <a href="https://img.shields.io/badge/HTML-29.1%25-green"><img alt="html badge" src="https://img.shields.io/badge/HTML-29.1%25-green"><a href="https://img.shields.io/badge/CSS-1.3%25-yellow"><img alt="CSS badge" src="https://img.shields.io/badge/CSS-1.3%25-yellow"><a href="https://img.shields.io/badge/Used-Node.js-red"><img alt="Node.js use" src="https://img.shields.io/badge/Used-Node.js-red"></a> <a href="https://img.shields.io/badge/npm-Inquirer-orange"><img alt="npm package Inquirer" src="https://img.shields.io/badge/npm-Inquirer-orange"></a><a href="https://img.shields.io/badge/npm-Inquirer-blue"><img alt="npm package Jest" src="https://img.shields.io/badge/npm-Jest-blue"></a>
+<a href="https://img.shields.io/badge/JavaScipt-69.6%25-yellow"><img alt="JavaScript use" src="https://img.shields.io/badge/JavaScipt-85.5%25-yellow"></a> <a href="https://img.shields.io/badge/HTML-14.5%25-green"><img alt="html badge" src="https://img.shields.io/badge/HTML-14.5%25-green"><a href="https://img.shields.io/badge/CSS-yellow"><img alt="CSS badge" src="https://img.shields.io/badge/CSS-yellow"><a href="https://img.shields.io/badge/Used-Node.js-red"><img alt="Node.js use" src="https://img.shields.io/badge/Used-Node.js-red"></a> <a href="https://img.shields.io/badge/npm-Inquirer-orange"><img alt="npm package Inquirer" src="https://img.shields.io/badge/npm-Inquirer-orange"></a><a href="https://img.shields.io/badge/npm-Inquirer-blue"><img alt="npm package Jest" src="https://img.shields.io/badge/npm-Jest-blue"></a>
 
 ## Table of Contents
 
@@ -18,15 +18,15 @@ This application is a Node command line application that takes in information ab
 
 Since testing is a key piece in making code maintainable, this application also includes Jest unit tests under `__tests__` directory.
 
-The live page can be viewed on GitHub Pages here: https://connietran-dev.github.io/team-page-generator/index.html
+The live page can be viewed on GitHub Pages here: 
 
-![Generated team webpage](images/teampage-generator.png)
+![Generated team webpage]()
 
 ## Installation
 
 ###### ATTENTION: Node.js installation is required prior to use!
 
-To generate your own HTML team page, first download the repository and run `npm install` in order to install the following npm package dependencies as specified in the [`package.json`](https://github.com/connietran-dev/team-page-generator/blob/master/package.json):
+To generate your own HTML team page, first download the repository and run `npm install` in order to install the following npm package dependencies as specified in the [`package.json`]():
 
 * [`inquirer`](https://www.npmjs.com/package/inquirer) will prompt the user for the team member's email, id, and specific information based on their role. For instance, an intern may provide their school, whereas an engineer may provide their GitHub username.
 * [`jest`](https://jestjs.io/) will run unit tests to ensure that the `Employee`, `Manager`, `Engineer`, and `Intern` objects are generated from their classes correctly.
