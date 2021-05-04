@@ -68,7 +68,7 @@ src/           // Templates for main HTML <body> and employee <div>s
     Main.html
     Manager.html
 index.js       // Runs the application
-prompts.js   // Inquirer prompts
+prompts.js     // Inquirer prompts
 ```
 
 ### Classes
