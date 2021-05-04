@@ -34,5 +34,21 @@ To generate your own HTML team page, first download the repository and run `npm 
 
 Once you have `npm install`, you can run the Node CLI application with `npm start` which will begin the questions about your engineering team. You can run the tests at any time with `npm test`.
 
+## Methodology
 
+### Directory Structure
+
+The directory structure of the application is as follows:
+
+```
+__test__/      // Jest tests
+    Employee.test.js
+    Engineer.test.js
+    Intern.test.js
+    Manager.test.js
+dist/          // Rendered output (HTML) and CSS style sheet
+lib/           // Classes as well as helper code to generate HTML
+index.js       // Runs the application
+questions.js   // Inquirer prompts
+```
 
