@@ -67,7 +67,18 @@ async function createEmployee() {
                     engResponses.engGithub);
             employees.push(newEngineer);
             console.log("Thank you. We've added an Engineer to the team: ", newEngineer);
-
+            await confirmEmployee();
+            break;
+        case 'Intern':
+            let internResponses = await inquirer.prompt(questions.intern);
+            let newIntern = new Intern
+                (internResponses.internName,
+                    internResponses.internId,
+                    internResponses.internEmail,
+                    internResponses.internSchool);
+            employees.push(newIntern);
+            console.log("Thank you. We've added an Intern to the team: ", newIntern);
+            await confirmEmployee();
     };
 
 };
