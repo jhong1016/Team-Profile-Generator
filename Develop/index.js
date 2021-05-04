@@ -27,7 +27,7 @@ async function createManager(){
 
     employees.push(newManager);
 
-    console.log("Thank you. A manager has been added to the team: ", newManager);
+    console.log("A manager has been added to the team: ", newManager);
 };
 
 // Function to ask to create a new team member.
@@ -38,7 +38,7 @@ async function confirmEmployee() {
 
     switch (confirmEmployee.confirmEmp) {
         case false:
-            console.log("Thank you. Here are your team members: ", employees);
+            console.log("Here is your team: ", employees);
             console.log('Generating your HTML page...');
             return;
 
@@ -63,7 +63,7 @@ async function createEmployee() {
                     engResponses.engEmail,
                     engResponses.engGithub);
             employees.push(newEngineer);
-            console.log("Thank you. We've added an Engineer to the team: ", newEngineer);
+            console.log("An Engineer has been added to the team: ", newEngineer);
             await confirmEmployee();
             break;
         case 'Intern':
@@ -74,7 +74,7 @@ async function createEmployee() {
                     internResponses.internEmail,
                     internResponses.internSchool);
             employees.push(newIntern);
-            console.log("Thank you. We've added an Intern to the team: ", newIntern);
+            console.log("An Intern has been added to the team: ", newIntern);
             await confirmEmployee();
     };
 
