@@ -9,7 +9,7 @@ const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 
 const render = require("./lib/htmlRenderer");
-const questions = require('./questions');
+const questions = require('./prompts');
 
 // Array to contain all Employee objects to render HTML.
 const employees = [];
