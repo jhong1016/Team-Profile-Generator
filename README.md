@@ -48,7 +48,48 @@ __test__/      // Jest tests
     Manager.test.js
 dist/          // Rendered output (HTML) and CSS style sheet
 lib/           // Classes as well as helper code to generate HTML
+src/           // Templates for main HTML <body> and employee <div>s
+    Engineer.html
+    Intern.html
+    Main.html
+    Manager.html
 index.js       // Runs the application
 questions.js   // Inquirer prompts
 ```
 
+### Classes
+
+This application utilizes JavaScript's brand of object-oriented programming by using constructors, the prototype chain, and the `ES6` pattern of `class`. 
+
+The different employee types, `Manager`, `Engineer`, and `Intern`, inherit methods and properties from a base class of `Employee`.
+
+The first class is an `Employee` parent class with the following properties and methods:
+
+  * name
+  * id
+  * email
+  * getName()
+  * getId()
+  * getEmail()
+  * getRole() // Returns 'Employee'
+
+The other three classes extend `Employee`. In addition to `Employee`'s properties and methods, `Manager` also has:
+
+  * officeNumber
+  * getRole() // Overridden to return 'Manager'
+
+In addition to `Employee`'s properties and methods, `Engineer` also has:
+
+  * github // GitHub username
+  * getGithub()
+  * getRole() // Overridden to return 'Engineer'
+
+In addition to `Employee`'s properties and methods, `Intern` also has:
+
+  * school 
+  * getSchool()
+  * getRole() // Overridden to return 'Intern'
+
+### Test-Driven Development (TDD)
+
+The development of this application focused on writing tests and ensuring application features passed to ensure code was understandable and maintainable. The methods on the classes were also developed to be as simple and pure as possible so that they are easier to test. The suite of `Jest` tests for the above classes in the `__tests__/` directory currently pass. Ultimately, these tests serve as fail-safes for future maintenance of the code base.
