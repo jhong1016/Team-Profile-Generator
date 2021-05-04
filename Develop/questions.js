@@ -14,7 +14,7 @@ const managerQuestions = [
         type: 'input',
         message: "What is your manager's employee ID?",
         name: 'mgrId',
-        default: '101',
+        default: '1',
         validate: function (answer) {
             if (answer <= 0) {
                 return console.log("A valid employee ID is required.");
@@ -37,7 +37,7 @@ const managerQuestions = [
         type: 'input',
         message: "What is your manager's office number?",
         name: 'mgrOffice',
-        default: '414',
+        default: '9876 5432',
         validate: function (answer) {
             if (answer.length < 1) {
                 return console.log("A valid office number is required.");
@@ -80,7 +80,7 @@ const engineerQuestions = [
         type: 'input',
         message: "What is your Engineer's employee ID?",
         name: 'engId',
-        default: '212',
+        default: '2',
         validate: function (answer) {
             if (answer <= 0) {
                 return console.log("A valid employee ID is required.");
@@ -128,7 +128,7 @@ const internQuestions = [
         type: 'input',
         message: "What is your Intern's employee ID?",
         name: 'internId',
-        default: '616',
+        default: '3',
         validate: function (answer) {
             if (answer <= 0) {
                 return console.log("A valid employee ID is required.");
