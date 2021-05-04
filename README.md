@@ -10,6 +10,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Methodology](#methodology)
+- [Walkthrough Video](#walkthrough-video)
 - [License](#license)
 
 ## Description
@@ -18,15 +19,15 @@ This application is a Node command line application that takes in information ab
 
 Since testing is a key piece in making code maintainable, this application also includes Jest unit tests under `__tests__` directory.
 
-The live page can be viewed on GitHub Pages here: 
+*Screenshot of the sample [`index.html`]:*
 
-![Generated team webpage]()
+![Screenshot](https://github.com/jhong1016/Professional-README-generator/blob/main/Assets/Screenshot%20of%20example%20README.JPG)
 
 ## Installation
 
 ###### ATTENTION: Node.js installation is required prior to use!
 
-To generate your own HTML team page, first download the repository and run `npm install` in order to install the following npm package dependencies as specified in the [`package.json`]():
+To generate your own HTML team page, first download the repository and run `npm install` in order to install the following npm package dependencies as specified in the [`package.json`]:
 
 * [`inquirer`] will prompt the user for the team member's email, id, and specific information based on their role. For instance, an intern may provide their school, whereas an engineer may provide their GitHub username.
 * [`jest`] will run unit tests to ensure that the `Employee`, `Manager`, `Engineer`, and `Intern` objects are generated from their classes correctly.
@@ -107,6 +108,12 @@ In addition to `Employee`'s properties and methods, `Intern` also has:
 ### Test-Driven Development (TDD)
 
 The development of this application focused on writing tests and ensuring application features passed to ensure code was understandable and maintainable. The methods on the classes were also developed to be as simple and pure as possible so that they are easier to test. The suite of `Jest` tests for the above classes in the `__tests__/` directory currently pass. Ultimately, these tests serve as fail-safes for future maintenance of the code base.
+
+## Walkthrough Video
+
+*Link to walk through video:*
+
+
 
 ## License
 
