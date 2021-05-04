@@ -51,6 +51,25 @@ async function confirmEmployee() {
     };
 };
 
+// Function to create Engineer or Intern.
+async function createEmployee() {
 
+    // Would you like to add an Engineer or Intern?
+    let employeeRole = await inquirer.prompt(questions.employee);
+
+    switch (employeeRole.empRole) {
+        case 'Engineer':
+            let engResponses = await inquirer.prompt(questions.engineer);
+            let newEngineer = new Engineer
+                (engResponses.engName,
+                    engResponses.engId,
+                    engResponses.engEmail,
+                    engResponses.engGithub);
+            employees.push(newEngineer);
+            console.log("Thank you. We've added an Engineer to the team: ", newEngineer);
+
+    };
+
+};
 
 init();
