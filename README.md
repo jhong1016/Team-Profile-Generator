@@ -2,7 +2,7 @@
 
 ---
 
-<a href="https://img.shields.io/badge/JavaScipt-69.6%25-yellow"><img alt="JavaScript use" src="https://img.shields.io/badge/JavaScipt-85.5%25-yellow"></a> <a href="https://img.shields.io/badge/HTML-14.5%25-green"><img alt="html badge" src="https://img.shields.io/badge/HTML-14.5%25-green"><a href="https://img.shields.io/badge/Used-Node.js-red"><img alt="Node.js use" src="https://img.shields.io/badge/Used-Node.js-red"></a> <a href="https://img.shields.io/badge/npm-Inquirer-orange"><img alt="npm package Inquirer" src="https://img.shields.io/badge/npm-Inquirer-orange"></a><a href="https://img.shields.io/badge/npm-Inquirer-blue"><img alt="npm package Jest" src="https://img.shields.io/badge/npm-Jest-blue"></a>
+<a href="https://img.shields.io/badge/JavaScipt-69.6%25-yellow"><img alt="JavaScript use" src="https://img.shields.io/badge/JavaScipt-85.5%25-yellow"></a> <a href="https://img.shields.io/badge/HTML-14.5%25-green"><img alt="html badge" src="https://img.shields.io/badge/HTML-14.5%25-green"> <a href="https://img.shields.io/badge/Used-Node.js-red"><img alt="Node.js use" src="https://img.shields.io/badge/Used-Node.js-red"></a> <a href="https://img.shields.io/badge/npm-Inquirer-orange"><img alt="npm package Inquirer" src="https://img.shields.io/badge/npm-Inquirer-orange"></a> <a href="https://img.shields.io/badge/npm-Inquirer-blue"><img alt="npm package Jest" src="https://img.shields.io/badge/npm-Jest-blue"></a>
 
 ## Table of Contents
 
