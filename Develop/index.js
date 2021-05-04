@@ -87,34 +87,18 @@ async function createEmployee() {
 async function init() {
     try {
         /* 
-        Code to use Inquirer to gather information about development team members. Based of responses, objects are created for each team member based off classes.
+        Code to use Inquirer to gather information about team members. Based on responses, objects are created for each team member.
         */
 
-        // Collect information about required Manager role and create a Manager object
+        // Collect information about required Manager role and create a Manager object.
         await createManager();
 
-        // Next, ask if they'd like to create another team member and createEmployee() within confirmEmployee function
+        // Next, ask to create another team member and createEmployee() within confirmEmployee function
         await confirmEmployee();
 
     } catch (error) {
         console.log(error);
     };
-
-    try {
-        /* After the user has input all employees desired, call the render function and pass an array containing all employee objects.
-        The render function will generate and return a block of HTML including templated divs for each employee. */
-        let renderedHTML = render(employees);
-
-
-        /* Take HTML returned from render() function and write to file named team.html in the docs folder */
-        // I have named it docs instead of output so that the page appears on GitHub pages
-        fs.writeFileSync('./docs/index.html', renderedHTML);
-
-        console.log('Success! Your HTML page has been generated in the docs folder.')
-
-    } catch (error) {
-        console.log(error);
-    }
 
 };
 
