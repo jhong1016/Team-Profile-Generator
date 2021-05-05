@@ -21,7 +21,7 @@ Since testing is a key piece in making code maintainable, this application also 
 
 *Screenshot of sample [`index.html`]:*
 
-![Screenshot](https://github.com/jhong1016/Team-Profile-Generator/blob/main/Assets/screenshot.JPG)
+![Screenshot](https://github.com/jhong1016/Team-Profile-Generator/blob/main/Develop/SampleHTMLpage.JPG)
 
 ## Installation
 
