@@ -9,19 +9,19 @@
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Methodology](#methodology)
 - [Walkthrough Video](#walkthrough-video)
+- [Methodology](#methodology)
 - [License](#license)
 
 ## Description
 
 This application is a Node command line application that takes in information about team members of a software engineering team and generates an HTML webpage that displays the whole software engineering team. There is a place for a Manager, Engineers and Interns. You can add as many Engineers and Interns as you need!
 
-Since testing is a key piece in making code maintainable, this application also includes Jest unit tests under `__tests__` directory.
+Since testing is a key piece in making code maintainable, this application also includes Jest unit tests in the `__tests__` directory.
 
 *Screenshot of sample [`index.html`]:*
 
-![Screenshot](https://github.com/jhong1016/Professional-README-generator/blob/main/Assets/Screenshot%20of%20example%20README.JPG)
+![Screenshot](https://github.com/jhong1016/Team-Profile-Generator/blob/main/Assets/screenshot.JPG)
 
 ## Installation
 
@@ -48,6 +48,12 @@ When you have completed building the team, inputting `n` for "no" will end the p
   * Role;
   * ID; and
   * Role-specific property (office number, link to GitHub profile, or university).
+
+## Walkthrough Video
+
+*Link to walk through video:*
+
+https://drive.google.com/file/d/1chHsF_AmMed7-IZi0TQmgWMAYPS-Wc7I/view?usp=sharing
 
 ## Methodology
 
@@ -104,16 +110,6 @@ In addition to `Employee`'s properties and methods, `Intern` also has:
   * school 
   * getSchool()
   * getRole() // Overridden to return 'Intern'
-
-### Test-Driven Development (TDD)
-
-The development of this application focused on writing tests and ensuring application features passed to ensure code was understandable and maintainable. The methods on the classes were also developed to be as simple and pure as possible so that they are easier to test. The suite of `Jest` tests for the above classes in the `__tests__/` directory currently pass. Ultimately, these tests serve as fail-safes for future maintenance of the code base.
-
-## Walkthrough Video
-
-*Link to walk through video:*
-
-https://drive.google.com/file/d/1chHsF_AmMed7-IZi0TQmgWMAYPS-Wc7I/view?usp=sharing
 
 ## License
 
