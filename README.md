@@ -19,7 +19,7 @@ This application is a Node command line application that takes in information ab
 
 Since testing is a key piece in making code maintainable, this application also includes Jest unit tests under `__tests__` directory.
 
-*Screenshot of the sample [`index.html`]:*
+*Screenshot of sample [`index.html`]:*
 
 ![Screenshot](https://github.com/jhong1016/Professional-README-generator/blob/main/Assets/Screenshot%20of%20example%20README.JPG)
 
@@ -113,7 +113,7 @@ The development of this application focused on writing tests and ensuring applic
 
 *Link to walk through video:*
 
-
+https://drive.google.com/file/d/1chHsF_AmMed7-IZi0TQmgWMAYPS-Wc7I/view?usp=sharing
 
 ## License
 
